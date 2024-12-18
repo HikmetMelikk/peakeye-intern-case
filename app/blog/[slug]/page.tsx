@@ -15,15 +15,17 @@ export default async function BlogDetailPage(props: {
 
 	return (
 		<main className="min-h-screen bg-background">
-			<article className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+			<article className="w-full ">
 				<BlogHero
+					name={blog.name}
+					avatar={blog.avatar}
 					title={blog.title}
 					category={blog.topic}
 					date={blog.createdAt}
 					src={blog.image}
 					alt={blog.id}
 				/>
-				<div className="mt-8">
+				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
 					<BlogContent content={blog.content} />
 				</div>
 			</article>

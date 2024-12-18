@@ -34,5 +34,8 @@ export async function fetchBlog(slug: string) {
 			createdAt: true,
 		},
 	});
+	if (!blog) {
+		return null;
+	}
 	return blog;
 }

@@ -23,7 +23,7 @@ async function BlogsList() {
 								<section className="flex flex-col justify-between flex-1">
 									<p className="mb-4 text-muted-foreground">{blog.title}</p>
 									<div className="flex items-center gap-4">
-										<BlogAvatar data={blog} />
+										<BlogAvatar avatar={blog.avatar} name={blog.name} />
 										<div className="flex items-center gap-2">
 											<Calendar className="h-4 w-4" />
 											<span className="text-sm">
