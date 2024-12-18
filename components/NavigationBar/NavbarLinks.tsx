@@ -11,8 +11,8 @@ export const navbarLinks = [
 	},
 	{
 		id: 1,
-		name: "Blog",
-		href: "/blog",
+		name: "Blogs",
+		href: "/blogs",
 	},
 	{
 		id: 2,
