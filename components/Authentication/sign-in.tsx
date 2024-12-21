@@ -1,9 +1,16 @@
-import { signInAction } from "./signInAction";
+import { auth } from "@/auth";
+import { signInAction, signOutAction } from "./signInAction";
 
-export default function SignIn() {
-	return (
+export default async function SignIn() {
+	const session = await auth();
+	const user = session?.user;
+	return user ? (
+		<form action={signOutAction}>
+			<button type="submit">Sign Out</button>
+		</form>
+	) : (
 		<form action={signInAction}>
-			<button type="submit">Signin with Google</button>
+			<button type="submit">Sign In</button>
 		</form>
 	);
 }

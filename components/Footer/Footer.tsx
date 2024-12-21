@@ -6,20 +6,20 @@ import { NewsletterForm } from "./NewsletterForm";
 
 const quickLinks = [
 	{ label: "Home", href: "/" },
-	{ label: "About", href: "/" },
+	{ label: "About", href: "/blank" },
 	{ label: "Blogs", href: "/blogs" },
-	{ label: "Archived", href: "/" },
-	{ label: "Author", href: "/" },
-	{ label: "Contact", href: "/" },
+	{ label: "Archived", href: "/blank" },
+	{ label: "Author", href: "/blank" },
+	{ label: "Contact", href: "/blank" },
 ];
 
 const categories = [
-	{ label: "Lifestyle", href: "/" },
-	{ label: "Technology", href: "/" },
-	{ label: "Travel", href: "/" },
-	{ label: "Business", href: "/" },
-	{ label: "Economy", href: "/" },
-	{ label: "Sports", href: "/" },
+	{ label: "Lifestyle", href: "/blank" },
+	{ label: "Technology", href: "/blank" },
+	{ label: "Travel", href: "/blank" },
+	{ label: "Business", href: "/blank" },
+	{ label: "Economy", href: "/blank" },
+	{ label: "Sports", href: "/blank" },
 ];
 
 export default function Footer() {
@@ -42,13 +42,13 @@ export default function Footer() {
 							</span>
 						</div>
 						<div className="flex gap-4">
-							<Link href="/terms" className="text-sm hover:text-foreground">
+							<Link href="/blank" className="text-sm hover:text-foreground">
 								Terms of Use
 							</Link>
-							<Link href="/privacy" className="text-sm hover:text-foreground">
+							<Link href="/blank" className="text-sm hover:text-foreground">
 								Privacy Policy
 							</Link>
-							<Link href="/cookie" className="text-sm hover:text-foreground">
+							<Link href="/blank" className="text-sm hover:text-foreground">
 								Cookie Policy
 							</Link>
 						</div>
