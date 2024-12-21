@@ -17,7 +17,7 @@ export const navbarLinks = [
 	{
 		id: 2,
 		name: "Contact",
-		href: "/contact",
+		href: "/",
 	},
 ];
 
