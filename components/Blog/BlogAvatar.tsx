@@ -1,7 +1,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 
 interface BlogAvatarProps {
-	avatar: string;
+	avatar?: string;
 	name: string;
 }
 

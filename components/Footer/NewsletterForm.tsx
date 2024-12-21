@@ -9,9 +9,7 @@ export function NewsletterForm() {
 
 	const handleSubmit = async (e: React.FormEvent) => {
 		e.preventDefault();
-		// Optional: Show a loading toast
 		const loadingToastId = toast.loading("Submitting your email...");
-
 		try {
 			const res = await fetch("/api/newsletter", {
 				method: "POST",
@@ -20,9 +18,7 @@ export function NewsletterForm() {
 				},
 				body: JSON.stringify({ email }),
 			});
-
 			const data = await res.json();
-
 			if (res.ok) {
 				toast.dismiss(loadingToastId);
 				toast.success(data.message);
@@ -33,7 +29,6 @@ export function NewsletterForm() {
 			}
 		} catch (error: any) {
 			toast.dismiss(loadingToastId);
-			// If you're targeting a specific language, retain the original message
 			toast.error("Bir hata oluştu.");
 			console.error("Newsletter subscription error:", error);
 		}
