@@ -6,20 +6,20 @@ import { NewsletterForm } from "./NewsletterForm";
 
 const quickLinks = [
 	{ label: "Home", href: "/" },
-	{ label: "About", href: "/about" },
-	{ label: "Blog", href: "/blog" },
-	{ label: "Archived", href: "/archived" },
-	{ label: "Author", href: "/author" },
-	{ label: "Contact", href: "/contact" },
+	{ label: "About", href: "/" },
+	{ label: "Blogs", href: "/blogs" },
+	{ label: "Archived", href: "/" },
+	{ label: "Author", href: "/" },
+	{ label: "Contact", href: "/" },
 ];
 
 const categories = [
-	{ label: "Lifestyle", href: "/category/lifestyle" },
-	{ label: "Technology", href: "/category/technology" },
-	{ label: "Travel", href: "/category/travel" },
-	{ label: "Business", href: "/category/business" },
-	{ label: "Economy", href: "/category/economy" },
-	{ label: "Sports", href: "/category/sports" },
+	{ label: "Lifestyle", href: "/" },
+	{ label: "Technology", href: "/" },
+	{ label: "Travel", href: "/" },
+	{ label: "Business", href: "/" },
+	{ label: "Economy", href: "/" },
+	{ label: "Sports", href: "/" },
 ];
 
 export default function Footer() {

@@ -14,7 +14,7 @@ export function FooterLinks({ title, links }: FooterLinksProps) {
 			<h3 className="text-lg font-semibold">{title}</h3>
 			<ul className="space-y-2">
 				{links.map((link) => (
-					<li key={link.href}>
+					<li key={link.label}>
 						<Link
 							key={link.href}
 							href={link.href}
