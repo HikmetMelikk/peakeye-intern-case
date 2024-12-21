@@ -1,3 +1,4 @@
+import { ClarityAnalytics } from "@/components/BlogClarity";
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/NavigationBar/NavBar";
 import type { Metadata } from "next";
@@ -29,6 +30,7 @@ export default function RootLayout({
 		<html lang="en">
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+				<ClarityAnalytics />
 				<Toaster position="top-center" reverseOrder={false} />
 				<Navbar />
 				<main className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
