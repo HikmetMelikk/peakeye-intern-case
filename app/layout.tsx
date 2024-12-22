@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: "PeakEye Case",
+	title: "PeakEye Blog Website",
 	description: "PeakEye Internship Case Project",
 };
 
