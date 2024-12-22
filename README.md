@@ -1,4 +1,3 @@
-<img width="1419" alt="image" src="https://github.com/user-attachments/assets/ef575aae-3d94-4bdf-a620-5d51136e0273" />
 # PeakEye Frontend Case
 Bu repository PeakEye Frontend Case'i için oluşturulmuştur. Readme dosyasında projenin detaylarını açıklıyor olacağım. 
 
