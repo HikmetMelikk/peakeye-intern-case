@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<img width="1419" alt="image" src="https://github.com/user-attachments/assets/ef575aae-3d94-4bdf-a620-5d51136e0273" />
+# PeakEye Frontend Case
+Bu repository PeakEye Frontend Case'i için oluşturulmuştur. Readme dosyasında projenin detaylarını açıklıyor olacağım. 
 
-## Getting Started
+## Projeyi Çalıştırma
 
-First, run the development server:
+Proje Vercel üzerinden deploy edildiği için herhangi ek bir çalıştırma adımına ihtiyaç duyulmamaktadır. Açıklamadaki linke tıklayarak siteyi ziyaret edebilirsiniz.
+    
+## Kullanılan Teknolojiler
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Frontend => Next.js, Tailwind CSS ve Typescript ile kodlandı.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Veritabanı => [Neon](https://neon.tech) (Serverless Postgres) kullanıldı.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Prisma ile schemalar oluşturuldu ve Neon ile senkronize edildi.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**EKSTRA**
 
-## Learn More
+- Authentication => Auth.js ile projeye Google OAuth özelliği eklendi. 
+*Bu özellik, siteye case'de ekstra özellik olarak eklenmesi istendiği eklenmiştir, sadece Giriş Yapma ve Çıkış fonksiyonları olarak çalışmaktadır. Giriş yapmak ya da yapmamak sitede herhangi ek bir özellik sağlamamaktadır.* 
 
-To learn more about Next.js, take a look at the following resources:
+[Kodlanan Tasarım](https://www.figma.com/community/file/1216616090937021365/free-blog-template-modern-creative-design) 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Site Özellikleri
+Sitede bulunan bazı butonlar tasarıma uyması için eklenmiştir. Herhangi bir işlevselliği bulunmamaktadır.
+- Anasayfada veritabanından çekilen blogların listelenmesi
+- Herhangi bir bloga tıklayarak o blogun detaylarına ulaşılması
+- Blogların sitede MDX formatına uygun bir şekilde gösterilmesi 
+- Tamamen responsive (duyarlı) bir tasarım
+- Google hesabı ile basit ve hızlıca giriş yapılabilmesi
+- Footerda bulunan Newsletter componentine girilen e-mail adresinin veritabanına kaydedilmesi
+- Sitedeki blog verileri yapay zeka ile oluşturulmuş olup, doğru bilgiler içerip içermediği kontrol edilmemiştir.
+- Vercel üzerinden kolayca deploy edilmiştir.
 
-## Deploy on Vercel
+  
+## Ekran Görüntüleri
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<img width="1419" alt="image" src="https://github.com/user-attachments/assets/1dfd2b7a-e6a7-42cc-96ae-f41f0435079b" />
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<img width="1417" alt="image" src="https://github.com/user-attachments/assets/efdc9812-f4a7-4c47-bfed-f450439373f4" />
+
+
+  
