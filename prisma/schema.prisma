@@ -86,3 +86,15 @@ model VerificationToken {
 
   @@id([identifier, token])
 }
+
+model Blog {
+  id        String   @id @default(cuid())
+  title     String
+  slug      String   @unique
+  content   String
+  topic     String
+  image     String
+  avatar    String
+  name      String
+  createdAt DateTime @default(now())
+}

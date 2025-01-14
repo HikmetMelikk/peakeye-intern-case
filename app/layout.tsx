@@ -1,6 +1,7 @@
 import { ClarityAnalytics } from "@/components/BlogClarity";
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/NavigationBar/NavBar";
+import { ThemeProvider } from "@/components/theme-provider";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Toaster } from "react-hot-toast";
@@ -27,16 +28,22 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
+		<html lang="en" suppressHydrationWarning>
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-				<ClarityAnalytics />
-				<Toaster position="top-center" reverseOrder={false} />
-				<Navbar />
-				<main className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
-					{children}
-				</main>
-				<Footer />
+				<ThemeProvider
+					attribute="class"
+					defaultTheme="system"
+					enableSystem
+					disableTransitionOnChange>
+					<ClarityAnalytics />
+					<Toaster position="top-center" reverseOrder={false} />
+					<Navbar />
+					<main className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+						{children}
+					</main>
+					<Footer />
+				</ThemeProvider>
 			</body>
 		</html>
 	);

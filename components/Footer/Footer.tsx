@@ -1,7 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
 import { FooterAbout } from "./FooterAbout";
 import { FooterLinks } from "./FooterLinks";
+import { FooterLogo } from "./FooterLogo";
 import { NewsletterForm } from "./NewsletterForm";
 
 const quickLinks = [
@@ -32,10 +32,10 @@ export default function Footer() {
 					<FooterLinks title="Category" links={categories} />
 					<NewsletterForm />
 				</div>
-				<section className="border-t ">
+				<section className="border-t">
 					<div className="container flex flex-col items-center justify-between gap-4 py-6 md:flex-row">
 						<div className="flex items-center gap-2">
-							<Image src="/bloglogo.svg" alt="logo" width={100} height={100} />
+							<FooterLogo />
 							<span className="text-sm text-muted-foreground">
 								© Hikmet Melik FIRAT {new Date().getFullYear()}. All Rights
 								Reserved.
